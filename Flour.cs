@@ -24,19 +24,19 @@ namespace Brot
     }
 
     // Methoden
-    public string getParticleSize()
+    public string GetParticleSize()
     { 
       return particleSize;
     }
-    public string getColour()
+    public string GetColour()
     {
       return colour;
     }
-    public int getAmountPerUnit()
+    public int GetAmountPerUnit()
     {
       return amountPerUnit;
     }
-    public int getNutritionValue()
+    public int GetNutritionValue()
     {
       return nutritionValue;
     }
