@@ -6,25 +6,18 @@ using System.Threading.Tasks;
 
 namespace Brot
 {
-  internal class Bread
+  internal class Bread : Food
   {
     // Eigenschaften
     private string typeOfBread;
     private int weight;
-    private int nutritionValue;
 
     // Konstruktoren
     public Bread(string typeOfBread, int weight, int nutritionValue)
     {
       this.typeOfBread = typeOfBread;
       this.weight = weight;
-      this.nutritionValue = nutritionValue;
-    }
-
-    // Methoden
-    public int GetNutritionValue()
-    {
-      return nutritionValue;
+      SetNutritionValue(nutritionValue);
     }
   }
 }

@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace Brot
 {
-  internal class Flour
+  internal class Flour : Food
   {
     // Felder
     private string particleSize;
     private string colour;
     private int amountPerUnit;
-    private int nutritionValue;
 
     // Konstruktoren
     internal Flour(string particleSize, string colour, int amountPerUnit, int nutritionValue)
@@ -20,7 +19,7 @@ namespace Brot
       this.particleSize = particleSize;
       this.colour = colour;
       this.amountPerUnit = amountPerUnit;
-      this.nutritionValue = nutritionValue;
+      SetNutritionValue(nutritionValue);
     }
 
     // Methoden
@@ -35,10 +34,6 @@ namespace Brot
     public int GetAmountPerUnit()
     {
       return amountPerUnit;
-    }
-    public int GetNutritionValue()
-    {
-      return nutritionValue;
     }
   }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Brot
 {
-  internal class Water
+  internal class Water : Food
   {
     // Felder
     private int amountPerUnit;
@@ -18,6 +18,7 @@ namespace Brot
     {
       amountPerUnit = unitSize;
       isFresh = true;
+      SetNutritionValue(1);
     }
 
     // Methoden
